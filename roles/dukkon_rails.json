@@ -4,6 +4,7 @@
 	"default_attributes": {
 	},
 	"run_list": [
-		"recipe[useful_packages::default]"
+		"recipe[useful_packages::default]",
+		"recipe[yum::default]"
 	]
 }
