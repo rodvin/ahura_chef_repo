@@ -2,9 +2,13 @@
 	"name": "dukkon_rails",
 	"description": "Our server at dukkon 800 Bay",
 	"default_attributes": {
+	  "selinux" : {
+            "state" : "disabled"
+          }
 	},
 	"run_list": [
 		"recipe[useful_packages::default]",
-		"recipe[yum::default]"
+		"recipe[yum::default]",
+		"recipe[selinux::default]"
 	]
 }
