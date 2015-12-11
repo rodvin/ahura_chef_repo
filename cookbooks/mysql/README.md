@@ -340,7 +340,7 @@ end
 #### Actions
 - `:create` - Renders the template to disk at a path calculated using
   the instance parameter.
-  
+
 - `:delete` - Deletes the file from the conf.d directory calculated
   using the instance parameter.
 
@@ -373,7 +373,7 @@ end
 
 ### mysql_client
 The `mysql_client` resource manages the MySQL client binaries and
-development libraries. 
+development libraries.
 
 It is an example of a "singleton" resource. Declaring two
 `mysql_client` resources on a machine usually won't yield two separate
@@ -397,7 +397,7 @@ end
 - `version` - Major MySQL version number of client packages. Only
   valid on for platforms that support multiple versions, such as RHEL
   via Software Collections and OmniOS.
-  
+
 #### Actions
 - `:create` - Installs the client software
 - `:delete` - Removes the client software
@@ -501,11 +501,11 @@ and adjust the settings with node attributes.
 - `recipe[yum-centos::default]` from the Supermarket
   https://supermarket.chef.io/cookbooks/yum-centos
   https://github.com/chef-cookbooks/yum-centos
-  
+
 - `recipe[yum-mysql-community::default]` from the Supermarket
   https://supermarket.chef.io/cookbooks/yum-mysql-community
   https://github.com/chef-cookbooks/yum-mysql-community
-  
+
 ### The mysql command line doesn't work
 
 If you log into the machine and type `mysql`, you may see an error
@@ -515,7 +515,7 @@ like this one:
 
 This is because MySQL is hardcoded to read the defined default my.cnf
 file, typically at /etc/my.cnf, and this LWRP deletes it to prevent
-overlap among multiple MySQL configurations. 
+overlap among multiple MySQL configurations.
 
 To connect to the socket from the command line, check the socket in the relevant my.cnf file and use something like this:
 

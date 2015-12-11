@@ -9,6 +9,7 @@
 	"run_list": [
 		"recipe[useful_packages::default]",
 		"recipe[yum::default]",
-		"recipe[selinux::default]"
+		"recipe[selinux::default]",
+		"recipe[rails_mysql::default]"
 	]
 }
