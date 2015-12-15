@@ -10,6 +10,7 @@
 		"recipe[useful_packages::default]",
 		"recipe[yum::default]",
 		"recipe[selinux::default]",
-		"recipe[rails_mysql::default]"
+		"recipe[rails_mysql::default]",
+		"recipe[samba-shared::default]"
 	]
 }
